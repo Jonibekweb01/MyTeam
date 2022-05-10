@@ -1,6 +1,6 @@
 .hero {
     position: relative;
-    padding: 60px 0 165px 0;
+    padding: 60px 0 250px 0;
     background-color: $main-background-color;
     
     &::before {
@@ -78,17 +78,11 @@
     cursor: pointer;
 }
 
-@media only screen and (max-width:1025px) {
-    .hero::after {
-        bottom: calc(50% - 212px);
-        right: calc(50% - 470px);
-    }
-}
 
 @media only screen and (max-width:1024px) {
     .hero::after {
-        bottom: calc(50% - 212px);
-        right: calc(50% - 420px);
+        bottom: calc(50% - 255px);
+        right: calc(50% - 420px);    
     }
     .info {
         margin-right: 30px;
@@ -106,19 +100,12 @@
 @media only screen and (max-width:911px) {
     
     .hero::after {
-        bottom: calc(50% - 212px);
-        right: calc(50% - 370px);
+        bottom: calc(50% - 255px);
+        right: calc(50% - 370px);    
     }
     
     .info__title {
         font-size: 66px;
-    }
-}
-
-@media only screen and (max-width:712px) {
-    .hero::after {
-        bottom: calc(50% - 355px);
-        right: calc(50% - 370px);
     }
 }
 
@@ -131,16 +118,8 @@
         }
         
         &::after {
-            position: absolute;
-            bottom: calc(50% - 322px);
+            bottom: calc(50% - 222px);
             right: calc(50% - 180px);
-            display: inline-block;
-            width: 358px;
-            height: 200px;
-            background-image: url('../images/bg.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            content: '';
         }
     }
     
@@ -177,9 +156,16 @@
     }
 }
 
+@media only screen and (max-width:712px) {
+    .hero::after {
+        bottom: calc(50% - 222px);
+        right: calc(50% - 180px);
+    }
+}
+
 @media only screen and (max-width:682px) {
     .hero::after {
-        bottom: calc(50% - 350px);
+        bottom: calc(50% - 250px);
         right: calc(50% - 180px);
     }
 }
@@ -193,16 +179,8 @@
         }
         
         &::after {
-            position: absolute;
-            bottom: calc(50% - 343px);
-            right: calc(50% - 180px);
-            display: inline-block;
-            width: 358px;
-            height: 200px;
-            background-image: url(../images/bg.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            content: '';
+            bottom: calc(50% - 243px);
+            right: calc(50% - 190px);
         }
     }
     .info {
