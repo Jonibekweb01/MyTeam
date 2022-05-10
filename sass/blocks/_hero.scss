@@ -1,0 +1,142 @@
+.hero {
+    padding: 60px 0 250px 0;
+    background-color: $main-background-color;
+}
+
+.hero__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    width: 100%;
+    max-width: 620px;
+}
+
+.info__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100px;
+    color: $main-color; 
+    cursor: pointer;
+}
+
+.info__title > span {
+    display: inline-block;
+    color: $text-color;
+}
+
+.content {
+    width: 100%;
+    max-width: 445px;
+}
+
+.content__span {
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    margin-bottom: 79px;
+    background-color: #79C8C7;
+    border-radius: 20px;
+}
+
+.content__text {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: $main-color;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1024px) {
+    .info {
+        margin-right: 30px;
+    }
+
+    .info__title {
+        font-size: 71px;
+    }
+
+    .content__span {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width:912px) {
+
+    .info__title {
+        font-size: 66px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .info {
+        max-width: 683px;
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+
+    .hero__inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .info__title {
+        font-size: 64px;
+        line-height: 56px;
+        margin-bottom: 24px;
+    }
+
+    .content {
+        width: 457px;
+    }
+
+    .content__span{
+        display: none;
+    }
+
+    .content__text {
+        font-size: 15px;
+        line-height: 28px;
+    }
+}
+
+
+@media only screen and (max-width:768px) {
+    .info {
+        max-width: 327px;
+        margin-right: 0;
+        margin-bottom: 18px;
+    }
+
+    .hero__inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .info__title {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 18px;
+    }
+
+    .content {
+        max-width: 327px;
+    }
+
+    .content__span{
+        display: none;
+    }
+
+    .content__text {
+        font-size: 15px;
+        line-height: 28px;
+    }
+}
+
