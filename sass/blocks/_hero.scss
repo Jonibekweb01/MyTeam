@@ -1,6 +1,32 @@
 .hero {
+    position: relative;
     padding: 60px 0 250px 0;
     background-color: $main-background-color;
+    
+    &::before {
+        position: absolute;
+        right: calc(50% - -480px);
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        background-image: url('../images/left-bg.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: '';
+    }
+    
+    &::after {
+        position: absolute;
+        bottom: calc(50% - 270px);
+        right: calc(50% - 540px);
+        display: inline-block;
+        width: 358px;
+        height: 200px;
+        background-image: url('../images/bg.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: '';
+    }
 }
 
 .hero__inner {
@@ -76,6 +102,23 @@
 @media only screen and (max-width:768px) {
     .hero {
         padding: 60px 0 197px 0;
+        
+        &::before {
+            display: none;
+        }
+        
+        &::after {
+            position: absolute;
+            bottom: calc(50% - 322px);
+            right: calc(50% - 180px);
+            display: inline-block;
+            width: 358px;
+            height: 200px;
+            background-image: url('../images/bg.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            content: '';
+        }
     }
     
     .hero__inner {
@@ -115,6 +158,23 @@
 @media only screen and (max-width:568px) {
     .hero {
         padding: 60px 0 197px 0;
+        
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            position: absolute;
+            bottom: calc(50% - 343px);
+            right: calc(50% - 180px);
+            display: inline-block;
+            width: 358px;
+            height: 200px;
+            background-image: url(../images/bg.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            content: '';
+        }
     }
     .info {
         max-width: 327px;
