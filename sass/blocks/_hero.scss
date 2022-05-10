@@ -17,7 +17,7 @@
     
     &::after {
         position: absolute;
-        bottom: calc(50% - 212px);
+        bottom: calc(50% - 255px);
         right: calc(50% - 540px);
         display: inline-block;
         width: 358px;
@@ -179,7 +179,7 @@
         }
         
         &::after {
-            bottom: calc(50% - 250px);
+            bottom: calc(50% - 244px);
             right: calc(50% - 190px);
         }
     }
