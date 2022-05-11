@@ -12,42 +12,49 @@
     <div class="container">
       <div class="header__inner">
         <div class="header__content">
-          <a href="#" class="header__link">
-            <img src="./images/myteam-logo.svg" alt="site logo" width="160" height="40" class="header__img">
+          <a class="header__logo" href="#">
+            <img class="header__img" src="./images/myteam-logo.svg" alt="logo-site" width="160" height="40">
           </a>
-          <nav class="menu">
+          <nav class="header__menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="#" class="menu__link">home</a>
+                <a class="menu__link" href="#">home</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">about</a>
+                <a class="menu__link" href="#">about</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link contact" href="#">contact us</a>
               </li>
             </ul>
           </nav>
-          <a href="tel:+998901204122" class="contact">contact us</a>
-          <button class="site-header__burger-btn">
-            &#9776;
+          <button class="header__btn">
+            <div class="not-active">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </button>
         </div>
       </div>
     </div>
   </header>
   
-  <main class="site-main">
+  <main>
     <section class="hero">
       <div class="container">
         <div class="hero__inner">
-          <div class="hero__info info">
-            <h1 class="info__title">Find the best <span>talent</span></h1>
+          <div class="hero__left">
+            <h1 class="hero__title">Find the <br>best <strong>talent </strong></h1>
           </div>
-          <div class="hero__content content">
-            <span class="content__span"></span>
-            <p class="content__text">Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into the abundance of global talent. We’re about to change that.</p>
+          <div class="hero__right">
+            <span class="hero__span"></span>
+            <p class="hero__text">Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into the abundance of global talent. We’re about to change that.</p>
           </div>
         </div>
       </div>
     </section>
   </main>
+  <script src="./js/main.js"></script>
 </body>
 </html>
