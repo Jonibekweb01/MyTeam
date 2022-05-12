@@ -101,7 +101,7 @@
         color: $main-color;
     }
 }
-    
+
 @media only screen and (max-width:957px) {
     .wrap {
         background-image:url("../images/wrap-top.png"), url("../images/wrap-bg.png");
@@ -200,7 +200,7 @@
 
 @media only screen and (max-width:360px) {
     .wrap {
-        background-position: calc(50% - 106px) calc(50% - 731px),calc(50% + 127px) calc(50% + 690px);
+        background-position: calc(50% - 106px) calc(50% - 751px),calc(50% + 77px) calc(50% + 750px);
     }
 }
 
