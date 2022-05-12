@@ -4,7 +4,7 @@
     background-image: url("../images/left-bg.png"), url("../images/bg.png");
     background-repeat: no-repeat;
     background-size: 200px 200px, 358px 100px;
-    background-position: calc(50% - 675px) calc(50% - 105px),calc(50% + 370px) calc(50% - -205px);
+    background-position: calc(50% - 675px) calc(50% - 105px),calc(50% + 370px) calc(50% + 205px);
 }
 
 
@@ -51,6 +51,24 @@
     font-size: 18px;
     line-height: 28px;
     color: $main-color;   
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    
+    .holder {
+        background-image: url("../images/left-bg@2x.png");
+    }
+    
+    .holder__box__left::after {
+        background-image: url("../images/bg@2x.png");
+    }
 }
 
 

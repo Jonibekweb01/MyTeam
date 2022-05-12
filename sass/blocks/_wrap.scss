@@ -1,0 +1,206 @@
+.wrap {
+    padding: 140px 0;
+    background-color: $main-background-color;
+    background-image: url("../../images/wrap-bg.png");
+    background-repeat: no-repeat;
+    background-size: 200px 100px;
+    background-position: calc(50% + 575px) calc(50% + 315px);
+}
+
+.wrap__top {
+    width: 100%;
+    max-width: 932px;
+    margin: 0 auto 56px auto;
+}
+
+.wrap__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center; 
+    color: $main-color;
+    
+    & > strong {
+        color: #79C8C7;
+    }
+}
+
+.wrap__list {
+    @include list-global;
+    display: flex;
+    align-items: center;
+}
+
+.item {
+    margin-right: 30px;
+    padding-top: 35px;
+    background-image: url(../images/success.svg);
+    background-repeat: no-repeat;
+    background-size: 67px 56px;
+    background-position: calc(50%) calc(50% - 120px);
+    text-align: center;
+    
+    &:last-child {
+        margin-right: 0;
+    }
+    
+    &::after {
+        display: block;
+        background-image: url("../../images/kady.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: calc(50%);
+        width: 100%;
+        height: 62px;
+        content: '';
+    }
+    
+    &:nth-child(2):after {
+        display: block;
+        background-image: url("../images/aisha.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: calc(50%);
+        width: 100%;
+        height: 62px;
+        content: '';
+    }
+    
+    &:nth-child(3):after {
+        display: block;
+        background-image: url("../images/arthur.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: calc(50%);
+        width: 100%;
+        height: 62px;
+        content: '';
+    }
+    
+    &__text {
+        margin: 0 0 24px 0;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px;
+        color: $main-color;
+    }
+    
+    &__title {
+        margin: 0 0 2px 0;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        color: #79C8C7;
+    }
+    
+    &__info {
+        margin-bottom: 32px;
+        font-size: 13px;
+        line-height: 18px;
+        color: $main-color;
+    }
+}
+
+@media only screen and (max-width:957px) {
+    .wrap {
+        background-image: url("../images/wrap-bg.png");
+        background-position: calc(50% + 415px) calc(50% + 355px);
+    }
+}   
+
+@media only screen and (max-width:852px) {
+    .wrap {
+        background-position: calc(50% + 327px) calc(50% + 365px);
+    }
+}
+
+@media only screen and (max-width:777px) {
+    .wrap {
+        padding: 100px 0;
+        background-position: calc(50% + 290px) calc(50% + 533px);
+    }
+    .wrap__title {
+        margin: 0 0 16px 0;
+        font-size: 32px;
+        line-height: 32px;
+    }
+    
+    .wrap__list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .item {
+        margin-right: 0;
+        margin-bottom: 48px;
+        background-position: calc(50%) calc(50% - 95px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media only screen and (max-width:691px) {
+    .wrap {
+        background-position: calc(50% + 245px) calc(50% + 549px);
+    }
+}
+
+@media only screen and (max-width:681px) {
+    .wrap {
+        background-position: calc(50% + 245px) calc(50% + 549px);
+    }
+}
+
+@media only screen and (max-width:681px) {
+    .wrap {
+        background-position: calc(50% + 245px) calc(50% + 574px);
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .wrap {
+        padding: 140px 0 164px 0;
+        background-position: calc(50% + 187px) calc(50% + 640px);
+    }
+    
+    .wrap__title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    
+    .item {
+        background-position: calc(50%) calc(50% - 110px);
+    }
+    
+    &__text {
+        margin: 0 0 16px 0;
+    }
+}
+
+@media only screen and (max-width:666px) {
+    .wrap {
+        background-position: calc(50% + 234px) calc(50% + 589px);
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .wrap {
+        background-position: calc(50% + 188px) calc(50% + 639px);
+    }
+}
+
+@media only screen and (max-width:430px) {
+    .wrap {
+        background-position: calc(50% + 118px) calc(50% + 693px);
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .wrap {
+        background-position: calc(50% + 127px) calc(50% + 690px);
+    }
+}
+

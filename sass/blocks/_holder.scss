@@ -1,6 +1,10 @@
 .holder {
     padding: 140px 0;
     background-color: $holder-bg;
+    background-image: url("../images/holder-bg.png");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: calc(50% + 674px) calc(50% + 240px);
 }
 
 .holder__inner {
@@ -41,7 +45,6 @@
     margin-bottom: 30px;
     &::before {
         display: block;
-        margin-right: 23px;
         background-image: url("../images/experienced.svg");
         background-repeat: no-repeat;
         background-size: 72px 72px;
@@ -66,6 +69,10 @@
     }
 }
 
+.info {
+    margin-left: 23px;
+}
+
 .list__title {
     margin-top: 0;
     margin-bottom: 16px;
@@ -85,6 +92,32 @@
     color: $main-color;
 }
 
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    
+    .holder {
+        background-image: url("../images/holder-bg@2x.png");
+    }
+}
+
+@media only screen and (max-width:1205px) {
+    .holder {
+        background-position: calc(50% + 60%) calc(50% + 50%);
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .holder {
+        background-image: none;
+    }
+}
+
 @media only screen and (max-width:822px) {
     .holder__title {
         font-size: 38px;
@@ -100,6 +133,10 @@
 }
 
 @media only screen and (max-width:777px) {
+    .holder {
+        background-image: url(../images/holder-bg.png);
+        background-position: calc(50% - -387px) calc(50% - 320px);
+    }
     .holder__left {
         margin-bottom: 65px;
     }
@@ -124,7 +161,26 @@
     }
 }
 
+
+@media only screen and (max-width:711px) {
+    .holder {
+        background-position: calc(50% + 355px) calc(50% - 360px);
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .holder {
+        background-position: calc(50% + 295px) calc(50% - 380px);
+    }
+}
+
 @media only screen and (max-width:576px) {
+    .holder {
+        padding: 64px 0;
+        background-color: #012F34;
+        background-position: calc(50% + 290px) calc(50% - 465px);
+    }
+    
     .holder__inner {
         margin: 0;
     }
@@ -135,19 +191,17 @@
         max-width: 240px;
     }
     
-    .list {
-        margin: 0;
-    }
     .list__item {
         flex-direction: column;
         align-items: center;
         margin-bottom: 48px;
     }
-
-        &::before {
-            margin: 0 0 16px 0;
+    
+    &::before {
+        margin: 0 0 16px 0;
     }
     .info {
+        margin-left: 0;
         text-align: center;
     }
     
@@ -160,5 +214,23 @@
         font-size: 15px;
         line-height: 25px;
         
+    }
+}
+
+@media only screen and (max-width:500px) { 
+    .holder {
+        background-position: calc(50% + 250px) calc(50% - 465px);
+    }
+}
+
+@media only screen and (max-width:429px) {
+    .holder{
+        background-position: calc(50% + 220px) calc(50% - 505px);
+    }
+}
+
+@media only screen and (max-width:378px) {
+    .holder {
+        background-position: calc(50% + 190px) calc(50% - 505px);
     }
 }
