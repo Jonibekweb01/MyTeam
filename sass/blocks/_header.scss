@@ -1,4 +1,4 @@
-.site-header {
+.header-site {
     padding: 73px 0;
     background-color: $main-background-color;
     overflow-x: hidden;
@@ -204,7 +204,7 @@ span + span {
 }
 
 @media only screen and (max-width:777px) {
-    .site-header {
+    .header-site {
         padding: 64px 0;
     }
     .header__logo {
@@ -217,7 +217,7 @@ span + span {
 }
 
 @media only screen and (max-width:576px) {
-    .site-header {
+    .header-site {
         padding: 48px 0;
     }
     

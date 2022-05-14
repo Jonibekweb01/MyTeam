@@ -1,4 +1,4 @@
-.site-footer {
+.footer-site {
     padding: 48px 0;
     background-color: $holder-bg;
 }
@@ -85,7 +85,7 @@
 }
 
 @media only screen and (max-width:777px) {
-    .site-footer { 
+    .footer-site { 
         padding: 56px 0;
     }
         .footer__inner {
@@ -138,7 +138,7 @@
     
     @media only screen and (max-width:585px) {
 
-        .site-footer { 
+        .footer-site { 
             padding: 66px 0;
         }
         .footer__inner {
