@@ -44,40 +44,6 @@
     &:last-child {
         margin-right: 0;
     }
-    
-    &::after {
-        display: block;
-        background-image: url("../../images/kady.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: calc(50%);
-        width: 100%;
-        height: 62px;
-        content: '';
-    }
-    
-    &:nth-child(2):after {
-        display: block;
-        background-image: url("../images/aisha.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: calc(50%);
-        width: 100%;
-        height: 62px;
-        content: '';
-    }
-    
-    &:nth-child(3):after {
-        display: block;
-        background-image: url("../images/arthur.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: calc(50%);
-        width: 100%;
-        height: 62px;
-        content: '';
-    }
-    
     &__text {
         margin: 0 0 24px 0;
         font-weight: 600;
