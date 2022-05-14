@@ -1,0 +1,144 @@
+.about__started {
+    padding: 76px 0;
+    background-color: $text-color;
+    background-image: url("../images/started.png");
+    background-repeat: no-repeat;
+    background-size: 200px 144px;
+    background-position: calc(50% - 575px) bottom;
+}
+
+.about__started__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+.about__started__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: $holder-bg;
+}
+
+.about__started__link {
+    text-decoration: none;
+    padding: 9px 33px 11px 33px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    border: 2px solid $holder-bg;
+    border-radius: 24px;
+    color: $holder-bg;
+    transition: 0.2s ease;
+    
+    &:hover {
+        background-color: $holder-bg;
+        color: $main-color;
+    }
+    
+}
+
+@media only screen  and (max-width:1024px){
+    .about__started {
+        background-position: bottom left;
+    }
+    
+    .about__started__inner {
+        padding: 0 140px;
+    }
+    
+    .about__started__title {
+        margin-right: 20px;
+    }
+}
+
+@media only screen  and (max-width:1000px){
+    
+    .about__started__inner {
+        padding: 0 120px;
+    }
+    
+    .about__started__title {
+        margin-right: 20px;
+        font-size: 32px;
+    }
+}
+
+@media only screen  and (max-width:962px){
+    
+    .about__started__inner {
+        padding: 0 100px;
+    }
+}
+
+@media only screen and (max-width:777px) {
+    .about__started {
+        padding: 84px 0;
+        background-color: $text-color;
+    }
+    
+    .about__started__inner {
+        padding: 0 50px;
+    }
+    
+    .about__started__title {
+        font-size: 32px;
+        line-height: 32px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width:683px) {
+    .about__started__inner {
+        padding: 0 40px;
+    }
+}
+
+@media only screen and (max-width:663px) {
+    .about__started__inner {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width:643px) {
+    .about__started__inner {
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width:604px) {
+    .about__started__inner {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width:585px) {
+    .about__started {
+        padding: 83px 0;
+        background-color: $text-color;
+    }
+    
+    .about__started__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about__started__title {
+        font-size: 32px;
+        line-height: 32px;
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+}
+
+@media only screen and (max-width:384px) {
+    
+    .about__started__inner {
+        text-align: center;
+        padding: 24px 0;
+    }
+    
+}

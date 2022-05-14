@@ -1,6 +1,10 @@
 .about__holder {
     padding: 140px 0;
     background-color: #004047;
+    background-image: url("../../images/about-holder-bg-1.png"), url("../../images/about-holder-top.png");
+    background-repeat: no-repeat;
+    background-size: 200px 200px, 147px 100px;
+    background-position: calc(50% - 675px) calc(50% - 435px),calc(50% + 600px) calc(50% + 485px);
 }
 
 .about__holder__title {
@@ -107,6 +111,10 @@
 }
 
 @media only screen and (max-width:1024px) {
+
+    .about__holder {
+        background-position: calc(50% - 510px) top, bottom right;
+    }
     .about__holder__list {
         justify-content: center;
         align-items: center;
@@ -135,6 +143,7 @@
     
     .about__holder {
         padding: 100px 0;
+        background-position: calc(50% - 385px) top, bottom right;
     }
     .about__holder__title {
         font-size: 32px;
@@ -167,10 +176,10 @@
     }
 }
 
-
 @media only screen and (max-width:576px) {
     .about__holder {
         padding: 88px 0 116px 0;
+        background-position: calc(50% - 180px) calc(50% - 1081px),  bottom right;
     }
     
     .about__holder__title {
@@ -181,5 +190,6 @@
     .about__holder__list__item {
         max-width: 327px;
         margin-right: 0;
+        margin-bottom: 52px;
     }
 }

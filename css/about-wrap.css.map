@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/blocks/about-wrap.scss"
+    ],
+    "names": [],
+    "file": "about-wrap.css"
+}
